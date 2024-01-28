@@ -1,5 +1,9 @@
 //  ============================================================
 //  use cout for quick and dirty temporary traces
+//  note
+//  CI application build will fail 
+//  with this file (still) included
+//  and merge request will be blocked
 //  ============================================================
 //  created by Manfred Sorgo
 
@@ -9,6 +13,7 @@
 
 #include <iostream>
 #include <iomanip>
+using std::ostream;
 using std::cout;
 using std::endl;
 using std::setw;

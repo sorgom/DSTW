@@ -37,6 +37,11 @@ build
 bin
 obj
 lib
+.vs
+*.vcxproj.*
+*.vcxproj
+*.sln
+
 # *.make
 
 # gcov
@@ -66,3 +71,7 @@ tempCodeRunnerFile.py
 html
 *.cov
 _*.*
+
+# depracated gen
+transitions_*.md
+*_states.md

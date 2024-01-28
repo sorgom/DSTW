@@ -1,5 +1,5 @@
 //  ============================================================
-//  Storage of Name Type Position
+//  name, type, position
 //  ============================================================
 //  created by Manfred Sorgo
 
@@ -7,57 +7,69 @@
 #ifndef NTPARRAY_H
 #define NTPARRAY_H
 
-#include <ifs/DataTypes.h>
-#include <BAS/StackArray.h>
+#include <BAS/coding.h>
 #include <BAS/Mem.h>
+#include <BAS/StaticArray.h>
+#include <ifs/DataTypes.h>
 
+//  name, type, position
 struct Ntp
 {
     ElementName name;
     INT32 type;
-    UINT32 pos;
-};
-
-class GenNtp
-{
-protected:
-    static const Ntp& genNtp(
+    size_t pos;
+    Ntp() = default;
+    Ntp(
         const ElementName& name,
         INT32 type = 0,
-        UINT32 pos = 0
+        size_t pos = 0
     );
+    NOCOPY(Ntp)
 };
 
-template <UINT32 CAP>
+//  ============================================================
+//  - storage of name, type, position
+//  ============================================================
+template <size_t CAP>
 class NtpArray : 
-    public SimpleStackArray<Ntp, CAP>,
-    private GenNtp
+    public StaticArray<Ntp, CAP>
 {
 public:
-    inline UINT32 addNtp(const ElementName& name, INT32 type, UINT32 pos)
+    inline NtpArray() = default;
+
+    inline auto add(const ElementName& name, INT32 type, size_t pos)
     {
-        return this->add(genNtp(name, type, pos));
+        return StaticArray<Ntp, CAP>::newC(name, type, pos);
     }
+
+    NOCOPY(NtpArray)
 };
 
-template <UINT32 CAP>
+//  ============================================================
+//  - index of name, type, position by name
+//  ============================================================
+template <size_t CAP>
 class NtpIndex : 
-    public StackArrayIndex<Ntp, CAP>,
-    private GenNtp
+    public StaticIndex<Ntp, CAP>
 {
+private:
+    using BaseT = StaticIndex<Ntp, CAP>;
 public:
     inline NtpIndex(const NtpArray<CAP>& a):
-        StackArrayIndex<Ntp, CAP>(a)
+        BaseT(a)
     {}
 
+    inline auto find(const ElementName& name) const
+    {
+        return BaseT::find(Ntp(name));
+    }
+    NOCOPY(NtpIndex)
+    NODEF(NtpIndex)
+
+protected:
     inline bool isGreater(const Ntp& a, const Ntp& b) const
     {
         return Mem::cmp(a.name, b.name) > 0;
-    }
-
-    inline INT32 findNtp(const ElementName& name) const
-    {
-        return this->findRef(genNtp(name));
     }
 };
 

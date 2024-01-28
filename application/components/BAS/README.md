@@ -2,12 +2,12 @@
 
 **BaseTypes.h**
 ```
-basic integral types and limits
+basic integral types
 ```
 
-**I_Searchable.h**
+**I_Array.h**
 ```
-defintion of interface I_Searchable to apply:
+defintion of interface I_Array to apply:
 - bubble sort
 - b-tree search
 - uniqueness check / duplicates count
@@ -20,35 +20,34 @@ type safe memset & memcpy
 
 **NtpArray.h**
 ```
-Storage of Name Type Position
+name, type, position
+
+- storage of name, type, position
+
+- index of name, type, position by name
 ```
 
-**StackArray.h**
+**StaticArray.h**
 ```
 the core of static memory allocation
-StackArrays
+StaticArrays
 -   act like arrays of pre-defined size
 -   can be filled with objects at runtime
+-   can store objects of different size classes
+    for the same interface
 -   do not provide any overflow protection
 
-SimpleStackArray
+StaticArray
 keeps objects in the same order as they were added.
-
-StackArray
--   can be sorted
--   can search for elements
-Derived classes have to provide
-the isGreater method for objects of their type
-See interface I_Searchable
 
 class CRef
 enables to store references as objects
 
-StackArrayIndex
-provides search for unsorted SimpleStackArray.
+StaticIndex
+provides search for unsorted StaticArray.
 Derived classes have to provide
 the isGreater method for objects of their type
-See interface I_Searchable
+See interface I_Array
 ```
 
 **coding.h**

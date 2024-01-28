@@ -11,10 +11,9 @@ namespace test
     {
     protected:
         SIG_Provider mSUT;
-        GenProjData<1, 3> mData;
+        GenProjData<1, 3, 1, 1> mData;
         inline TestGroupSIP()
         {
-            mockAll();
             mData.setSigType(0, SIG_TYPE_H);
             mData.setSigType(1, SIG_TYPE_N); 
             mData.setSigType(2, SIG_TYPE_H_N); 
@@ -24,18 +23,9 @@ namespace test
     TEST_GROUP_BASE(SIG_03, TestGroupSIP)
     {};
 
-    //  test type: size check
-    TEST(SIG_03, T01)
-    {
-        STEP(1)
-        L_CHECK_EQUAL_SIZE(SIG_X, SIG_H)
-        L_CHECK_EQUAL_SIZE(SIG_X, SIG_N)
-        L_CHECK_EQUAL_SIZE(SIG_X, SIG_H_N)
-    }
-
     //  test type: equivalence class test
     //  load valid ProjData SIG
-    TEST(SIG_03, T02)
+    TEST(SIG_03, T01)
     {
         STEP(1)
         m_Dispatcher().expectAssign(mData.sigName(0), SUBSYS_SIG, 0, 0);
@@ -52,7 +42,7 @@ namespace test
 
     //  test type: equivalence class test
     //  load invalid ProjData SIG (unknown type)
-    TEST(SIG_03, T03)
+    TEST(SIG_03, T02)
     {
         SETUP()
         mData.setSigType(2, SIG_TYPE_H + 100); 
@@ -69,7 +59,7 @@ namespace test
 
     //  test type: equivalence class test
     //  load invalid ProjData SIG (too many)
-    TEST(SIG_03, T04)
+    TEST(SIG_03, T03)
     {
         STEP(1)
         m_Log().expectLog(MOD_SIG_PROVIDER, ERR_STARTUP);
@@ -80,7 +70,7 @@ namespace test
 
     //  test type: equivalence class test
     //  load valid ProjData SIG Dispatcher returns negative value
-    TEST(SIG_03, T05)
+    TEST(SIG_03, T04)
     {
         STEP(1)
         m_Dispatcher().expectAssign(mData.sigName(0), SUBSYS_SIG, 0, 0);
@@ -94,7 +84,7 @@ namespace test
     
     //  test type: coverage
     //  retrieve instance
-    TEST(SIG_03, T06)
+    TEST(SIG_03, T05)
     {
         unmock();
         I_SIG_Provider& inst = IL::getSIG_Provider();

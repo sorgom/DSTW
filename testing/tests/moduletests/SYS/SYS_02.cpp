@@ -46,8 +46,8 @@ namespace test
         CHECK_N_CLEAR()
 
         STEP(3)
-        //  LCR not part of current implementation
         nameElement(fldState, 3, "LCR");
+        m_LCR_Hub().expectFromDsp(3, fldState);
         mSUT.dispatch(fldState);
         CHECK_N_CLEAR()
 
@@ -87,6 +87,7 @@ namespace test
         STEP(3)
         //  LCR not part of current implementation
         nameElement(guiCmd, 3, "LCR");
+        m_LCR_Hub().expectFromDsp(3, guiCmd);
         mSUT.dispatch(guiCmd);
         CHECK_N_CLEAR()
 
@@ -191,7 +192,7 @@ namespace test
         mSUT.reset();
         STEP(1)
         SUBSTEPS()
-        for (UINT32 n = 0; n < CAPACITY_DSP; ++n)
+        for (size_t n = 0; n < CAPACITY_DSP; ++n)
         {
             LSTEP(n)
             const INT32 ret = mSUT.assign(genElementName(n, "TSW"), SUBSYS_TSW, n);
@@ -232,5 +233,21 @@ namespace test
         mSUT.dispatch(guiCmd);
         CHECK_N_CLEAR()    
 
+    }
+
+    //  test type: equivalence class test
+    //  Dispatcher duplicate assignments -> index error
+    TEST(SYS_02, T08)
+    {
+        mSUT.reset();
+        mSUT.assign(genElementName(1, "TSW"), SUBSYS_TSW, 1);
+        mSUT.assign(genElementName(1, "TSW"), SUBSYS_TSW, 2);
+        mSUT.assign(genElementName(3, "LCR"), SUBSYS_LCR, 3);
+        mSUT.assign(genElementName(4, "SEG"), SUBSYS_SEG, 4);
+        CHECK_N_CLEAR()
+
+        m_Log().expectLog(MOD_DISPATCHER, ERR_STARTUP);
+        mSUT.index();
+        CHECK_N_CLEAR()
     }
 }

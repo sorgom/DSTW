@@ -13,18 +13,23 @@ void Dispatcher::reset()
 
 void Dispatcher::index()
 {
-    mIndx.index();
+    if (mIndx.index())
+    { pass();}
+    else
+    {
+        IL::getLog().log(MOD_DISPATCHER, ERR_STARTUP);
+    }
 }
 
-INT32 Dispatcher::assign(
+size_t Dispatcher::assign(
     const ElementName& name, 
     const E_Subsys subs, 
-    const UINT32 pos)
+    const size_t pos)
 {
-    INT32 res = -1;
+    size_t res = invalidPos;
     if (mData.hasSpace())
     {
-        res = mData.addNtp(name, subs, pos);
+        res = mData.add(name, subs, pos);
     }
     else
     { pass();}
@@ -33,14 +38,11 @@ INT32 Dispatcher::assign(
 
 void Dispatcher::dispatch(const FldState& tele) const
 {
-    const INT32 fnd = mIndx.findNtp(tele.name);
-    if (fnd < 0)
-    { 
-        IL::getLog().log(MOD_DISPATCHER, ERR_MATCH);
-    }
-    else
+    const PosRes res = mIndx.find(tele.name);
+
+    if (res.valid)
     {
-        const Ntp& ntp = mIndx.getRef(fnd);
+        const Ntp& ntp = mIndx.get(res.pos);
         switch (ntp.type)
         {
         case SUBSYS_TSW:
@@ -49,26 +51,28 @@ void Dispatcher::dispatch(const FldState& tele) const
         case SUBSYS_SIG:
             IL::getSIG_Hub().fromDsp(ntp.pos, tele);
             break;
-        case SUBSYS_SEG:
-            break;
         case SUBSYS_LCR:
+            IL::getLCR_Hub().fromDsp(ntp.pos, tele);
+            break;
+        case SUBSYS_SEG:
             break;
         default:
             break;
         }
+    }
+    else
+    { 
+        IL::getLog().log(MOD_DISPATCHER, ERR_MATCH);
     }
 }
 
 void Dispatcher::dispatch(const GuiCmd& tele) const
 {
-    const INT32 fnd = mIndx.findNtp(tele.name);
-    if (fnd < 0)
-    { 
-        IL::getLog().log(MOD_DISPATCHER, ERR_MATCH);
-    }
-    else
+    const PosRes res = mIndx.find(tele.name);
+
+    if (res.valid)
     {
-        const Ntp& ntp = mIndx.getRef(fnd);
+        const Ntp& ntp = mIndx.get(res.pos);
         switch (ntp.type)
         {
         case SUBSYS_TSW:
@@ -77,17 +81,22 @@ void Dispatcher::dispatch(const GuiCmd& tele) const
         case SUBSYS_SIG:
             IL::getSIG_Hub().fromDsp(ntp.pos, tele);
             break;
-        case SUBSYS_SEG:
-            break;
         case SUBSYS_LCR:
+            IL::getLCR_Hub().fromDsp(ntp.pos, tele);
+            break;
+        case SUBSYS_SEG:
             break;
         default:
             break;
         }
     }
+    else
+    { 
+        IL::getLog().log(MOD_DISPATCHER, ERR_MATCH);
+    }
 }
 
-void Dispatcher::dispatch(const UINT32 id, const CmdFld& tele) const
+void Dispatcher::dispatch(const size_t id, const CmdFld& tele) const
 {
     if (id < mData.size())
     {
@@ -100,7 +109,7 @@ void Dispatcher::dispatch(const UINT32 id, const CmdFld& tele) const
     { pass();}
 }
 
-void Dispatcher::dispatch(const UINT32 id, const StateGui& tele) const
+void Dispatcher::dispatch(const size_t id, const StateGui& tele) const
 {
     if (id < mData.size())
     {

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 797 572" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+<g>
+<g>
+<rect x="10" y="10" width="112" height="40" style="fill:#6dceff;"/>
+</g>
+<g>
+<rect x="10" y="10" width="112" height="40" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="44.829px" y="23.5px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:13px;">
+Loader</text>
+</g>
+</g>
+<g>
+<path d="M66.5,51l0,511" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;stroke-dasharray:3,3;"/>
+</g>
+<g>
+<rect x="146" y="10" width="104" height="40" style="fill:#6dceff;"/>
+</g>
+<g>
+<rect x="146" y="10" width="104" height="40" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="164.905px" y="23.5px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:13px;">
+Dispatcher</text>
+</g>
+</g>
+<g>
+<path d="M198.5,51l0,511" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;stroke-dasharray:3,3;"/>
+</g>
+<g>
+<rect x="290" y="10" width="112" height="40" style="fill:#ffeaad;"/>
+</g>
+<g>
+<rect x="290" y="10" width="112" height="40" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="303.882px" y="23.5px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:13px;">
+TSW Provdier</text>
+</g>
+</g>
+<g>
+<path d="M346.5,51l0,511" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;stroke-dasharray:3,3;"/>
+</g>
+<g>
+<rect x="418" y="10" width="112" height="40" style="fill:#ebffd8;"/>
+</g>
+<g>
+<rect x="418" y="10" width="112" height="40" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="435.125px" y="23.5px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:13px;">
+SIG Provider</text>
+</g>
+</g>
+<g>
+<path d="M474.5,51l0,511" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;stroke-dasharray:3,3;"/>
+</g>
+<g>
+<rect x="546" y="10" width="103.072" height="40" style="fill:#d8fff8;"/>
+</g>
+<g>
+<rect x="546" y="10" width="103.072" height="40" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="556.5px" y="23.5px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:13px;">
+LCR Provider</text>
+</g>
+</g>
+<g>
+<path d="M598.5,51l0,511" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;stroke-dasharray:3,3;"/>
+</g>
+<g>
+<rect x="658" y="10" width="128" height="40" style="fill:#d8e5ff;"/>
+</g>
+<g>
+<rect x="658" y="10" width="128" height="40" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="680.596px" y="23.5px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:13px;">
+SEG Provider</text>
+</g>
+</g>
+<g>
+<path d="M722.5,51l0,511" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;stroke-dasharray:3,3;"/>
+</g>
+<g>
+<path d="M67,98l124,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M180.837,102.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M180.837,102.21l10.163,-4.21l-10.163,-4.21l-0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="101.539px" y="87.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+1 : reset</text>
+</g>
+</g>
+<g>
+<rect x="191" y="98" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M67,130l272,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M328.837,134.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M328.837,134.21l10.163,-4.21l-10.163,-4.21l0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="107.7px" y="119.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+2 : load</text>
+</g>
+</g>
+<g>
+<rect x="339" y="130" width="14" height="28" style="fill:none;"/>
+</g>
+<g>
+<rect x="339" y="130" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M346,162l-141,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M215.163,157.79l-10.163,4.21l10.163,4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M215.163,157.79l-10.163,4.21l10.163,4.21l0,-8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="241.78px" y="152.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+3 : assign 1</text>
+</g>
+</g>
+<g>
+<rect x="191" y="162" width="14" height="28" style="fill:none;"/>
+</g>
+<g>
+<rect x="191" y="162" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M199,194l140,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M328.837,198.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M328.837,198.21l10.163,-4.21l-10.163,-4.21l0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="249.51px" y="184.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+4 : id 1</text>
+</g>
+</g>
+<g>
+<rect x="339" y="194" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M346,226l-141,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M215.163,221.79l-10.163,4.21l10.163,4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M215.163,221.79l-10.163,4.21l10.163,4.21l0,-8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="240.78px" y="217.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+5 : assign n</text>
+</g>
+</g>
+<g>
+<rect x="191" y="226" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M199,258l140,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M328.837,262.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M328.837,262.21l10.163,-4.21l-10.163,-4.21l0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="249.51px" y="248.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+6 : id n</text>
+</g>
+</g>
+<g>
+<rect x="339" y="258" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M346,290l-273,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M83.163,285.79l-10.163,4.21l10.163,4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M83.163,285.79l-10.163,4.21l10.163,4.21l0,-8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="248.01px" y="280.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+7 : return</text>
+</g>
+</g>
+<g>
+<rect x="59" y="290" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M67,322l400,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M456.837,326.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M456.837,326.21l10.163,-4.21l-10.163,-4.21l0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="119.315px" y="311.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+8 : load</text>
+</g>
+</g>
+<g>
+<rect x="467" y="322" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M474,354l-401,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M83.163,349.79l-10.163,4.21l10.163,4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M83.163,349.79l-10.163,4.21l10.163,4.21l0,-8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="386.142px" y="344.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+9 : return</text>
+</g>
+</g>
+<g>
+<rect x="59" y="354" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M67,386l524,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M580.837,390.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M580.837,390.21l10.163,-4.21l-10.163,-4.21l0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="115.7px" y="375.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+10 : load</text>
+</g>
+</g>
+<g>
+<rect x="591" y="386" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M598,418l-525,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M83.163,413.79l-10.163,4.21l10.163,4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M83.163,413.79l-10.163,4.21l10.163,4.21l0,-8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<g>
+<text x="511.01px" y="408.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+1</text>
+<text x="517.275px" y="408.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+1 : return</text>
+</g>
+</g>
+</g>
+<g>
+<rect x="59" y="418" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M67,450l648,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M704.837,454.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M704.837,454.21l10.163,-4.21l-10.163,-4.21l0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="107.7px" y="438.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+12 : load</text>
+</g>
+</g>
+<g>
+<rect x="715" y="450" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M722,482l-649,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M83.163,477.79l-10.163,4.21l10.163,4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M83.163,477.79l-10.163,4.21l10.163,4.21l0,-8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="639.01px" y="472.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+13 : return</text>
+</g>
+</g>
+<g>
+<rect x="59" y="482" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M67,514l124,0" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<path d="M180.837,518.21l10.163,-4.21l-10.163,-4.21" style="fill:#00b799;fill-rule:nonzero;"/>
+</g>
+<g>
+<path d="M180.837,518.21l10.163,-4.21l-10.163,-4.21l-0,8.42" style="fill:none;fill-rule:nonzero;stroke:#00b799;stroke-width:1px;"/>
+</g>
+<g>
+<g>
+<text x="101.45px" y="504.5px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:13px;fill:#00b799;">
+14 : index</text>
+</g>
+</g>
+<g>
+<rect x="191" y="514" width="14" height="28" style="fill:none;stroke:#00b799;stroke-width:1px;"/>
+</g>
+</g>
+</svg>
